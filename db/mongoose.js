@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const key = 'X0bSPpKlhfHdwdSL'
+const key = process.env.key
 mongoose.connect(`mongodb+srv://Oleksii:${key}@cluster0-1tqyp.mongodb.net/test?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useCreateIndex: true,
